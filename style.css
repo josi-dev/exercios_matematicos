@@ -1,0 +1,58 @@
+
+details {
+    text-align: center;
+    
+}
+
+summary {
+    font-size: 5vh;
+    
+}
+
+#resultado {
+    margin-left: 38vw;
+    width: 17vw;
+    height: 17vw;
+    font-size: 7vh;
+}
+
+#verificar {
+    width: 15vw;
+    height: 15vw;
+}
+
+
+#opcao {
+    border: 3px solid purple;
+    border-radius: 4px;
+    display: none;
+}
+
+#nivel {
+    margin-top: 30vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 4vh 7vh;
+    
+}
+
+#nivel div {
+    border: 1px solid purple;
+    border-radius: 8px;
+    /*display: inline-block;*/
+    font-size: 7vh;
+    padding: 3vh 0vh;
+    text-align: center;
+}
+
+#desafio {
+    font-size: 7vh;
+    text-align: center;
+}
+
+#desenho {
+    display: grid;
+    
+}
+
+
