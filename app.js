@@ -45,17 +45,25 @@ function operacao(num1,num2) {
 
 
 
-/*
 
-let resultado = eval(desafio)
+
+
+function cal() {
+    var desafio = document.getElementById("desafio").innerHTML
+    var resultado = document.getElementById("resultado").value
+    if(eval(desafio) == resultado) {
+        document.write("<dialog open id='certo'><img src='https://vitapromotora.sistemayuppie.com.br/public/assets/sucess.gif' width='60%'></dialog>")
+        document.getElementById("certo").style.textAlign = 'center'
+document.getElementById("certo").style.border = 'none'
+    }else {
+        document.write("<dialog open id='certo'><img src='https://cdn.dribbble.com/users/251873/screenshots/9388228/error-img.gif' width='60%'></dialog>")
+        document.getElementById("certo").style.textAlign = 'center'
+document.getElementById("certo").style.border = 'none'
+    }
     
-    function cal() {
-    let tentativa = document.getElementById("resultado")
-        if(tentativa == resultado) {
-            document.write("<img src='https://static.wixstatic.com/media/1c92b2_352bfdb524654143b0879a274cd14463~mv2.gif'>")
-        }
+    
+}
 
-*/
 
 
 
