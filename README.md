@@ -1,4 +1,4 @@
-## exercicios_matematicos
+## Exercicios_Matematicos
 
 ## Descrição
 
