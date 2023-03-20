@@ -37,7 +37,7 @@ summary {
     display: none;
 }
 
-#nivel {
+#nivelSoma, #nivelMenos, #nivelMultiplicar, #nivelDivisor {
     margin-top: 30vh;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -45,16 +45,16 @@ summary {
     
 }
 
-#nivel div {
+#nivelSoma div, #nivelMenos div, #nivelMultiplicar div, #nivelDivisor div {
     border: 1px solid purple;
     border-radius: 8px;
-    text-shadow: 1px 1px 3px red,-1px -1px 3px blue;
+    text-shadow: 1px 1px 3px green,-1px -1px 3px blue;
     font-size: 7vh;
     padding: 3vh 0vh;
     text-align: center;
 }
 
-#nivel div:hover {
+#nivelSoma div:hover {
     transform: scale(1.5);
     transition: transform 3s;
 }
@@ -70,3 +70,26 @@ summary {
 }
 
 
+/* subtração */
+
+
+
+#nivelMenos div {
+    text-shadow: 1px 1px 3px orange,-1px -1px 3px blue;
+}
+
+
+
+/* multiplicação */
+
+#nivelMultiplicar div {
+    text-shadow: 1px 1px 3px yellow,-1px -1px 3px blue;
+}
+
+
+
+/* divisao */
+
+#nivelDivisor div {
+    text-shadow: 1px 1px 3px red,-1px -1px 3px blue;
+}
