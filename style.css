@@ -9,27 +9,7 @@
 
 details {
     text-align: center;
-    
 }
-
-summary {
-    font-size: 5vh;
-    
-}
-
-#resultado {
-    margin-left: 38vw;
-    width: 17vw;
-    height: 17vw;
-    font-size: 7vh;
-    text-align: center;
-}
-
-#verificar {
-    width: 15vw;
-    height: 15vw;
-}
-
 
 #opcao {
     border: 3px solid purple;
@@ -37,36 +17,8 @@ summary {
     display: none;
 }
 
-#nivelSoma, #nivelMenos, #nivelMultiplicar, #nivelDivisor {
-    margin-top: 30vh;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 4vh 7vh;
-    
-}
-
-#nivelSoma div, #nivelMenos div, #nivelMultiplicar div, #nivelDivisor div {
-    border: 1px solid purple;
-    border-radius: 8px;
-    text-shadow: 1px 1px 3px green,-1px -1px 3px blue;
-    font-size: 7vh;
-    padding: 3vh 0vh;
-    text-align: center;
-}
-
-#nivelSoma div:hover {
-    transform: scale(1.5);
-    transition: transform 3s;
-}
-
-#desafio {
-    font-size: 7vh;
-    text-align: center;
-}
-
 #desenho {
     display: grid;
-    
 }
 
 
@@ -92,4 +44,110 @@ summary {
 
 #nivelDivisor div {
     text-shadow: 1px 1px 3px red,-1px -1px 3px blue;
+}
+
+
+
+
+
+@media screen and (orientation: portrait){
+    
+    summary {
+    font-size: 5vh;
+    }
+    
+    #resultado {
+    margin-left: 38vw;
+    width: 17vw;
+    height: 17vw;
+    font-size: 7vh;
+    text-align: center;
+    }
+    
+    #verificar {
+    width: 15vw;
+    height: 15vw;
+    }
+    
+    #nivelSoma, #nivelMenos, #nivelMultiplicar, #nivelDivisor {
+    margin-top: 30vh;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 4vh 7vh;
+    }
+    
+    #nivelSoma div, #nivelMenos div, #nivelMultiplicar div, #nivelDivisor div {
+    border: 1px solid purple;
+    border-radius: 8px;
+    text-shadow: 1px 1px 3px green,-1px -1px 3px blue;
+    font-size: 7vh;
+    padding: 3vh 0vh;
+    text-align: center;
+    }
+    
+    #nivelSoma div:hover {
+    transform: scale(1.5);
+    transition: transform 3s;
+    }
+    
+    #desafio {
+    font-size: 7vh;
+    text-align: center;
+    }
+    
+    
+    
+}
+
+
+
+
+@media screen and (orientation: landscape){
+    
+    summary {
+    font-size: 5vh;
+    margin-top: 5vh;
+    }
+    
+    #resultado {
+    margin-left: 38vw;
+    width: 13vw;
+    height: 13vw;
+    font-size: 7vh;
+    text-align: center;
+    }
+    
+    #verificar {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    margin-left: 4vh;
+    }
+    
+    #nivelSoma, #nivelMenos, #nivelMultiplicar, #nivelDivisor {
+    margin-top: 30vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-gap: 4vh 7vh;
+    }
+    
+    #nivelSoma div, #nivelMenos div, #nivelMultiplicar div, #nivelDivisor div {
+    border: 1px solid purple;
+    border-radius: 8px;
+    text-shadow: 1px 1px 3px green,-1px -1px 3px blue;
+    font-size: 12vh;
+    padding: 11vh 0vh;
+    text-align: center;
+    }
+    
+    
+    #nivelSoma div:hover, #nivelMenos div:hover, #nivelMultiplicar div:hover, #nivelDivisor div:hover {
+        border-radius: 50%;
+        transition: border-radius 0.6s linear;
+    }
+    
+    #desafio {
+    font-size: 9vh;
+    text-align: center;
+    }
 }

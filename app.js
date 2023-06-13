@@ -78,11 +78,24 @@ function menos(num1,num2) {
     let caixa_esquerda = document.getElementById("img_esquerda")
    
        for (i = 0; i < num1; i++) {
-          let abacate = "<img src='https://cdn-icons-png.flaticon.com/512/2503/2503796.png' width='60' onclick='tirar(i)' >"
+          let abacate = "<img src='https://cdn-icons-png.flaticon.com/512/2503/2503796.png' width='60'>"
            document.getElementById("img_esquerda").innerHTML = caixa_esquerda.innerHTML + abacate
 
          console.log(i)
        }
+    
+    let macaSub = [...document.querySelectorAll("img")]
+    
+    macaSub.map((ele) => {
+        ele.addEventListener("click", (evt) => {
+            let evtMaca = evt.target
+            evtMaca.style.opacity = '0.2'
+        })
+    })
+    
+    
+    
+    
     
 }
 
@@ -301,12 +314,10 @@ document.getElementById("certo").style.border = 'none'
     
 }//fucao
 
+var dii = document.getElementById("nivelDivisor")
 
-/* testes */
-var calculostestes = 1
-function tirar(posicao) {
-    var num = posicao - calculostestes
-    let imgOpa = document.querySelectorAll("img")[num].style.opacity = '0.2'
-     
-    calculostestes++
-}
+var uuu = document.createElement("div")
+uuu.setAttribute("style","color:red;")
+uuu.innerHTML = "5"
+uuu.setAttribute("onclick","divisor(60,2)")
+dii.appendChild(uuu)
